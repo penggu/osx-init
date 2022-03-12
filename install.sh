@@ -26,7 +26,10 @@ PROD=$(softwareupdate -l |
   tr -d '\n')
 softwareupdate -i "$PROD" --verbose;
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+# Unattended Homebrew installation
+# https://docs.brew.sh/Installation
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 brew install \
   boost	\
   caskroom/cask/brew-cask \
