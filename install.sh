@@ -14,7 +14,7 @@ killall Finder 2>/dev/null;
 echo "Setting up ~/.vimrc...";
 touch ~/.vimrc;
 echo "set number" >> ~/.vimrc;
-echo "" >> ~/.vimrc;
+echo "set ruler" >> ~/.vimrc;
 echo "highlight OverLength ctermbg=red ctermfg=white guibg=#592929" >> ~/.vimrc;
 echo "match OverLength /\\%81v.\\+/" >> ~/.vimrc;
 
