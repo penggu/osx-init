@@ -11,10 +11,6 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true; # show all file
 killall Dock 2>/dev/null;
 killall Finder 2>/dev/null;
 
-echo "Setting up ~/.bash_profile...";
-touch ~/.bash_profile;
-echo "export PS1=\"\w $ \";" >> ~/.bash_profile;
-
 echo "Setting up ~/.vimrc...";
 touch ~/.vimrc;
 echo "get number" >> ~/.vimrc;
