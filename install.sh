@@ -55,11 +55,31 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 # https://formulae.brew.sh/cask/google-chrome
 brew install --cask google-chrome
 
+############################################################
+# Install git
+############################################################
+
+brew install git
+
+
+############################################################
+# Build The locate database (/var/db/locate.database)
+############################################################
+
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
+
+
+
+
+
+############################################################
+# TODO: revisit the list below, clean them up one at a time
+############################################################
 # brew install \
 #   boost	\
 #   caskroom/cask/brew-cask \
-#   cmake	\
-#   git \
+#   cmake \
 #   leiningen \
 #   mongodb \
 #   mysql \
@@ -81,7 +101,6 @@ brew install --cask google-chrome
 #   dropbox \
 #   firefox \
 #   flash \
-#   google-chrome \
 #   google-chrome-canary \
 #   haskell-platform \
 #   java \
