@@ -15,6 +15,7 @@ echo "Setting up ~/.vimrc...";
 touch ~/.vimrc;
 echo "set number" >> ~/.vimrc;
 echo "set ruler" >> ~/.vimrc;
+echo "set nowrap" >> ~/.vimrc;
 echo "highlight OverLength ctermbg=red ctermfg=white guibg=#592929" >> ~/.vimrc;
 echo "match OverLength /\\%81v.\\+/" >> ~/.vimrc;
 
