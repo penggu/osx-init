@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
 ############################################################
+# Build The locate database (/var/db/locate.database)
+############################################################
+
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
+
+############################################################
 # MacOS System defaults
 ############################################################
 
@@ -55,22 +62,21 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 # https://formulae.brew.sh/cask/google-chrome
 brew install --cask google-chrome
 
+
 ############################################################
 # Install git
 ############################################################
 
+# https://formulae.brew.sh/formula/git#default
 brew install git
 
 
 ############################################################
-# Build The locate database (/var/db/locate.database)
+# Install gh
 ############################################################
 
-sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
-
-
-
-
+#https://formulae.brew.sh/formula/gh#default
+brew install gh
 
 
 ############################################################
