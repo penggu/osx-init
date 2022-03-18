@@ -99,6 +99,15 @@
 
 
 ############################################################
+# Install unity-hub and unity
+https://formulae.brew.sh/cask/unity-hub#default
+https://formulae.brew.sh/cask/unity#default
+############################################################
+  brew install --cask unity-hub
+  brew install --cask unity
+
+
+############################################################
 # TODO: revisit the list below, clean them up one at a time
 ############################################################
 # brew install \
