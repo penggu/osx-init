@@ -108,6 +108,13 @@ https://formulae.brew.sh/cask/unity#default
 
 
 ############################################################
+# Install visual studio code
+https://formulae.brew.sh/cask/visual-studio-code#default
+############################################################
+  brew install --cask visual-studio-code
+
+
+############################################################
 # TODO: revisit the list below, clean them up one at a time
 ############################################################
 # brew install \
