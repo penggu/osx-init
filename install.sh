@@ -64,11 +64,13 @@
 
 
 ############################################################
-# Install git
+# Install git and config it
 # https://formulae.brew.sh/formula/git#default
 ############################################################
 
   brew install git
+# git config --global push.default simple; # default Git push behavior is set to `simple`
+# git config --global credential.helper osxkeychain; # activate git credentials storage
 
 
 ############################################################
@@ -163,8 +165,6 @@ https://formulae.brew.sh/cask/visual-studio-code#default
 #   webstorm \
 # ;
 
-# git config --global credential.helper osxkeychain; # activate git credentials storage
-# git config --global push.default simple; # default Git push behavior is set to `simple`
 
 # echo "Setting up MongoDB...";
 # sudo mkdir -p /data/db;
